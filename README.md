@@ -1,7 +1,6 @@
 # sandhi
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/shantanuo/sandhi/main?labpath=sanskrit_sandhi.ipynb)
 
-
 denormalized sanskrit sandhi based on panini sutra.
 Click on the Binder button above, run all cells, add your ord at the end of the script. for e.g.
 
