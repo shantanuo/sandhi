@@ -17,3 +17,7 @@ if you are looking for sandhi of यज् + न then look for  **ज् न** i
 
 You will get ज्ञ and hence your sandhi word will be 
 य + ज्ञ = यज्ञ
+
+This is poor man's sandhi builder. For richer experiece you can visit:
+
+https://sanskrit.uohyd.ac.in/scl/#
