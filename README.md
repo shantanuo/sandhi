@@ -21,3 +21,7 @@ You will get ज्ञ and hence your sandhi word will be
 This is poor man's sandhi builder. For richer experiece you can visit:
 
 https://sanskrit.uohyd.ac.in/scl/#
+
+_____
+
+If there is more than one level of nesting required, then you need to type the entry again. For e.g. when you type सत् जन you expect सज्जन  but the software will reply सद् जन You need to again type सद् जन and you will get the expected सज्जन 
