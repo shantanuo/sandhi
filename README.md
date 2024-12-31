@@ -6,8 +6,7 @@ sandhi_builder('पितृ उपदेश')
 
 returns {'पित्रुपदेश'}
 
-If you do not want to use python, then look for the last and first character in the index file. for e.g.
-if you are looking for sandhi of यज् + न then look for  **ज् न** in the index file. 
+If you do not want to use python, then look for the last and first character in the file (sandhi_code_out.txt) like a telephone directory. for e.g. if you are looking for sandhi of यज् + न then look for  **ज् न** in the index file. 
 
 !grep 'ज् न' sandhi_code_out.txt
 
