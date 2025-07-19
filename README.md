@@ -60,3 +60,15 @@ If using android phone, add "Marathi Spell check" app. (It has Sanskrit Sandhi t
 https://play.google.com/store/apps/details?id=com.myapp.marathispellcheckandsanskritsandhi
 
 You get three in one! sandhi, splitter and spell checker.
+
+_____
+
+Achived accuracy of 93.5% in the Bhagvad gita benchmark corpus:
+
+https://github.com/sanskrit-sandhi/SandhiKosh/
+
+Compare with other solutions in this paper:
+
+http://www.lrec-conf.org/proceedings/lrec2018/pdf/755.pdf
+
+JNU: 23.64% || UoH: 73.1% || INRIA: 82.1%
