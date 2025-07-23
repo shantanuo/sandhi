@@ -70,5 +70,3 @@ https://github.com/sanskrit-sandhi/SandhiKosh/
 Compare with other solutions in this paper:
 
 http://www.lrec-conf.org/proceedings/lrec2018/pdf/755.pdf
-
-JNU: 23.64% || UoH: 73.1% || INRIA: 82.1%
