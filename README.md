@@ -63,10 +63,6 @@ You get three in one! sandhi, splitter and spell checker.
 
 _____
 
-Achived accuracy of 93.5% in the Bhagvad gita benchmark corpus:
-
-https://github.com/sanskrit-sandhi/SandhiKosh/
-
-Compare with other solutions in this paper:
+Achived accuracy of 93.5% in the Bhagvad gita benchmark corpus. Compare with other solutions mentioned in this paper:
 
 http://www.lrec-conf.org/proceedings/lrec2018/pdf/755.pdf
