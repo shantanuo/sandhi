@@ -34,16 +34,6 @@ Input: मुनी इमो
 Output: मुनी_इमो
 
 This implies that no Sandhi is possible due to प्रकृतिभाव सन्धि (ईदूदेद्द्विवचनं प्रगृह्यम्). Even if the word मुनीमो is also returned, it should be ignored.
-
-2) Asterisk ('*') in Sandhi Output:
-   
-If a word in the output is followed by an asterisk ('*'), it signifies that the word is preferred. For example:
-
-Input: महा ऋषी
-Output: महर्षी* महार्षी
-
-Here, the word महर्षी* is marked with an asterisk *, indicating that it is more appropriate than महार्षी
-
 _____
 
 A) Telegram Bot:
