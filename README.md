@@ -1,68 +1,148 @@
 # sandhi
-denormalized sanskrit sandhi (based on Panini sutra) in pure python.
-Run all cells in the notebook, test your word at the end of the script. for e.g.
 
-sandhi_builder('पितृ उपदेश') 
+Denormalized Sanskrit Sandhi (based on Pāṇini's sūtras) implemented in pure Python.
 
-returns {'पित्रुपदेश'}
+## 🚀 Run in Google Colab
 
-If you do not want to use python, then look for the last and first character in the file (sandhi_code_out.txt) like a telephone directory. for e.g. if you are looking for sandhi of यज् + न then look for  **ज् न** in the index file. 
+Use the link below to open and run the notebook directly in Google Colab (no installation required):
 
-!grep 'ज् न' sandhi_code_out.txt
+**https://colab.research.google.com/github/shantanuo/sandhi/blob/main/sanskrit_sandhi.ipynb**
 
+Run all the cells in the notebook, then test your word at the end of the script. For example:
+
+```python
+sandhi_builder('पितृ उपदेश')
+```
+
+returns:
+
+```python
+{'पित्रुपदेश'}
+```
+
+---
+
+If you do not want to use Python, look for the last character of the first word and the first character of the second word in the index file (`sandhi_code_out.txt`), similar to looking up a telephone directory.
+
+For example, if you are looking for the Sandhi of **यज् + न**, search for **ज् न** in the index file:
+
+```bash
+grep 'ज् न' sandhi_code_out.txt
+```
+
+Output:
+
+```
 ज् न ज्ञ 2.1.1 श्चुत्व
-
 ज् न ञ्न 2.7.1 अनुनासिक
+```
 
-You will get ज्ञ and hence your sandhi word will be 
+You get **ज्ञ**, and hence the Sandhi word becomes:
+
+```
 य + ज्ञ = यज्ञ
+```
 
-This is poor man's sandhi builder. For richer experiece you can visit:
+This is a poor man's Sandhi builder. For a richer experience, visit:
 
 https://sanskrit.uohyd.ac.in/scl/#
 
-_____
+---
 
-If there is more than one level of nesting required, then you need to type the entry again. For e.g. when you type सत् जन you expect सज्जन  but the software will reply सद् जन You need to again type सद् जन and you will get the expected सज्जन 
-_____
+If more than one level of Sandhi is required, enter the output again.
 
-1) Underscore ('_') in Sandhi Output:
-   
-If an underscore ('_') appears in the Sandhi output, it indicates that the words cannot be joined. For example:
+For example, when you type:
 
-Input: मुनी इमो
-Output: मुनी_इमो
+```
+सत् जन
+```
 
-This implies that no Sandhi is possible due to प्रकृतिभाव सन्धि (ईदूदेद्द्विवचनं प्रगृह्यम्). Even if the word मुनीमो is also returned, it should be ignored.
+you may expect:
 
-2) Asterisk ('*') in Sandhi Output:
+```
+सज्जन
+```
 
-If a word in the output is followed by an asterisk ('*'), it signifies that the word is preferred. For example:
+but the software will first return:
 
-Input: महा ऋषी
-Output: महर्षी* महार्षी
+```
+सद् जन
+```
 
-Here, the word महर्षी* is marked with an asterisk *, indicating that it is more appropriate than महार्षी
+Enter **सद् जन** again to obtain the expected result:
 
-_____
+```
+सज्जन
+```
 
-A) Telegram Bot:
+---
 
-f you are using Telegram, add the "Sanskrit One" bot to your contacts list.
+### 1) Underscore (`_`) in Sandhi Output
+
+If an underscore (`_`) appears in the output, it indicates that the words cannot be joined.
+
+Example:
+
+**Input**
+
+```
+मुनी इमो
+```
+
+**Output**
+
+```
+मुनी_इमो
+```
+
+This indicates that no Sandhi is possible because of **प्रकृतिभाव सन्धि (ईदूदेद्द्विवचनं प्रगृह्यम्)**.
+
+Even if **मुनीमो** is also returned, it should be ignored.
+
+### 2) Asterisk (`*`) in Sandhi Output
+
+If a word is followed by an asterisk (`*`), it indicates the preferred form.
+
+Example:
+
+**Input**
+
+```
+महा ऋषी
+```
+
+**Output**
+
+```
+महर्षी* महार्षी
+```
+
+Here **महर्षी*** is the preferred form.
+
+---
+
+## A) Telegram Bot
+
+If you use Telegram, add the **Sanskrit One** bot to your contacts:
 
 https://t.me/sanskritonebot
 
+## B) Android App
 
-B) Android App:
-
-If using android phone, add "Marathi Spell check" app. (It has Sanskrit Sandhi tab.)
+If you use an Android phone, install the **Marathi Spell Check** app. It includes a Sanskrit Sandhi tab.
 
 https://play.google.com/store/apps/details?id=com.myapp.marathispellcheckandsanskritsandhi
 
-You get three in one! sandhi, splitter and spell checker.
+You get three tools in one:
 
-_____
+- Sandhi Builder
+- Sandhi Splitter
+- Spell Checker
 
-Achived accuracy of 93.5% in the Bhagvad gita benchmark corpus. Compare with other solutions mentioned in this paper:
+---
+
+Achieved **93.5% accuracy** on the Bhagavad Gītā benchmark corpus.
+
+Compare it with other solutions mentioned in this paper:
 
 http://www.lrec-conf.org/proceedings/lrec2018/pdf/755.pdf
